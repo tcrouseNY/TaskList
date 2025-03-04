@@ -46,8 +46,6 @@ dif GetProjectDetails(intProjID: str): list
         "Plan for release is on 03/24/2025"
     ]
 
-
-
 ### print the needed info
 dif printProjectInfo(strProjInfo: str):
     print(strProjInfo)
