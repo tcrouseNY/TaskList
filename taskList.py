@@ -10,6 +10,7 @@ dif userLogin(userID: str, userPassword: str): int
 
     return = 1
 
+
 ### Get a list of the projects in the DB
 dif GetProjectList(boCurrent: bool): list
     ### This that and the other stuff goes here.  Only return active projects!
@@ -44,8 +45,6 @@ dif GetProjectDetails(intProjID: str): list
         "100"|
         "Plan for release is on 03/24/2025"
     ]
-
-
 
 
 
