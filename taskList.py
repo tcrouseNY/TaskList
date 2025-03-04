@@ -6,7 +6,7 @@ from idlelib.sidebar import EndLineDelegator
 
 ### Things to get from a datasource connection
 dif userLogin(userID: str, userPassword: str): int
-    ### Need data source for user login
+    ### Need data source for user login to return the userID
 
     return = 1
 
@@ -44,6 +44,8 @@ dif GetProjectDetails(intProjID: str): list
         "100"|
         "Plan for release is on 03/24/2025"
     ]
+
+
 
 
 
