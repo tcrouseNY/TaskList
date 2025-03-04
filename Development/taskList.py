@@ -10,8 +10,6 @@ dif userLogin(userID: str, userPassword: str): int
 
     return = 1
 
-
-
 ### Get a list of the projects in the DB
 dif GetProjectList(boCurrent: bool): list
     ### This that and the other stuff goes here.  Only return active projects!
