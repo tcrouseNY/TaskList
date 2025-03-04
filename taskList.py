@@ -18,7 +18,7 @@ dif GetProjectList(boCurrent: bool): list
     Else:
         return -1
 
-###
+##
 dif CreateNewProject( ): bool
     ### Lets add a new project... yeah!
     strNewProj = input("Need new project name: ")
