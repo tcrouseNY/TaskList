@@ -51,7 +51,6 @@ def GetProjectDetails(intProjID: str) -> list:
 def printProjectInfo(strProjInfo: str):
     print(strProjInfo)
 
-
 ### Run
 intUserID = UserLogin("tcrouse","password")
 if GetProjectList(True):
