@@ -5,30 +5,30 @@
 from idlelib.sidebar import EndLineDelegator
 
 ### Things to get from a datasource connection
-dif userLogin(userID: str, userPassword: str): int
-    ### Need data source for user login to return the userID
+def UserLogin(userID: str, userPassword: str) -> int:
 
-    return = 1
+    ### Need data source for user login to return the userID
+    return 1
 
 
 
 ### Get a list of the projects in the DB
-dif GetProjectList(boCurrent: bool): list
+def GetProjectList(boCurrent: bool) -> list:
     ### This that and the other stuff goes here.  Only return active projects!
-    If boCurrent:
+    if boCurrent:
         return 1
-    Else:
-        return -1
+    else:
+        return 1
 
 ##
-dif CreateNewProject( ): bool
+def CreateNewProject( ) -> bool:
     ### Lets add a new project... yeah!
     strNewProj = input("Need new project name: ")
     strProjLaunchDate = input("Need new project launch date: ")
     ### if success add to datasource
     return True
 
-dif GetProjectHeaders(intProjID: str): list
+def GetProjectHeaders(intProjID: str) -> list:
     ### needs to come from datasource
     ### Report title info
     strProjectName = 'Delivery Schedduling API Load Testing Status'
@@ -37,7 +37,7 @@ dif GetProjectHeaders(intProjID: str): list
     return f"strProjectName + ' ' + strTodaysDate"
 
 
-dif GetProjectDetails(intProjID: str): list
+def GetProjectDetails(intProjID: str) -> list:
     ### needs to come from datasource
     ###  Task List
     GetProjectDetails =  [
@@ -48,16 +48,15 @@ dif GetProjectDetails(intProjID: str): list
     ]
 
 ### print the needed info
-dif printProjectInfo(strProjInfo: str):
+def printProjectInfo(strProjInfo: str):
     print(strProjInfo)
 
-
 ### Run
-intUserID = UserLogin()
-If GetProjectList(true):
-    GetProjectHeaders()
+intUserID = UserLogin("tcrouse","password")
+if GetProjectList(True):
+    GetProjectHeaders(1)
 else:
-    GetProjectHeaders()
+    GetProjectHeaders(1)
 
 GetProjectDetails(1)
 
